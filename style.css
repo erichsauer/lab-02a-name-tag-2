@@ -44,14 +44,42 @@ body {
     background-color: palevioletred;
     grid-row: 2 / 4;
     grid-column: 4 / 5;
+}
 
+.user-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica, Arial,  sans-serif;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: white solid 3px;
 }
 
 .footer {
     background-color: palegoldenrod;
     grid-row: 4 / 5;
     grid-column: 1 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rock Salt', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
 
+.button {
+    font-weight: bold;
 }
 
 .nametag {
@@ -102,6 +130,36 @@ body {
     font-family: 'Rock Salt', cursive;
     font-size: 1.5rem;
     margin: -10px;
+}
+#color-area {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#color-1 {
+    background-color: blue;
+    border-radius: 25px;
+    margin: 5px;
+    width: 50px;
+    color: white;
+}
+
+#color-2 {
+    background-color: black;
+    border-radius: 25px;
+    margin: 5px;
+    width: 50px;
+    color: white;
+}
+
+#color-3 {
+    background-color: forestgreen;
+    border-radius: 25px;
+    margin: 5px;
+    width: 50px;
+    color: white;
 }
 
 .bottom {

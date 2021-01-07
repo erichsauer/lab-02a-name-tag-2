@@ -12,18 +12,34 @@
     <div class="grid-container">
         <header class="header"></header>
         <main class="main">
-            <section class="nametag">
+            <section id='tag-color' class="nametag">
                 <div class="hello"><strong>H E L L O !</strong></div>
                 <div class="my-name-is">my name is</div>
                 <article class="name-area">
-                    <div class="name">Erich</div>
-                    <div class="pronouns">he/him</div>
+                    <div id="tag-name" class="name">Erich</div>
+                    <div id="tag-pronouns" class="pronouns">he/him</div>
                 </article>
                 <section class="bottom"></section>
             </section>
         </main>
-        <aside class="aside"></aside>
-        <footer class="footer"></footer>
+        <aside class="aside">
+            <div class="user-options-container">
+                <input id="name" class="user-options" type="text" placeholder="your name"></input>
+                <input id="pronouns" class="user-options" type="text" placeholder="your pronouns"></input>
+                <button id='button' onclick='hello()' class="user-options button">Click Here!</button>
+                <div id="color-area" class="user-options">
+                    <button id='color-1' class="user-options color"></button>
+                    <button id="color-2" class="user-options color"></button>
+                    <button id="color-3" class="user-options color"></button>
+                </div>
+                <div class="user-options">font</div>
+            </div>
+        </aside>
+        <footer class="footer">
+            <div id="counter-text">
+                <span id="click-counter"></span></div>
+        </footer>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
